@@ -1,0 +1,22 @@
+.randomColor-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    >h1 {
+        color: white;
+        display: flex;
+        margin: auto;
+        font-size: 3rem;
+    }
+    >h2 {
+        color: white;
+        display: flex;
+        margin: auto;
+        font-size: 6rem;
+    }
+}
+
+.randomColor-button_container {
+    margin: 0 auto 0 auto;
+}

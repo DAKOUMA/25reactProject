@@ -1,0 +1,78 @@
+.accordion {
+  margin: 2rem auto 2rem auto;
+  width: 50%;
+  text-align: center;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+.accordion > h1 {
+  padding: 0.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: red;
+}
+.accordion > p {
+  font-size: 1.5rem;
+  height: 0;
+  overflow: hidden;
+  background-color: rgb(239, 94, 94);
+}
+
+.button-container {
+  width: 40%;
+  display: flex;
+  margin: 1rem auto 0 auto;
+  justify-content: space-around;
+}
+.button-container > .accordion-button {
+  background-color: white;
+  padding: 0.5rem;
+  border: solid rgb(224, 224, 224) 1px;
+  border-radius: 0.3rem;
+  transition: 400ms;
+}
+.button-container > .accordion-button:hover {
+  scale: 1.1;
+}
+.button-container > .optionSelected {
+  background-color: rgb(157, 240, 157);
+}
+
+.selected > p {
+  font-size: 1.5rem;
+  height: 100%;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.randomColor-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+}
+.randomColor-container > h1 {
+  color: white;
+  display: flex;
+  margin: auto;
+  font-size: 3rem;
+}
+.randomColor-container > h2 {
+  color: white;
+  display: flex;
+  margin: auto;
+  font-size: 6rem;
+}
+
+.randomColor-button_container {
+  margin: 0 auto 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  list-style: none;
+}/*# sourceMappingURL=App.css.map */

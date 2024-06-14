@@ -1,0 +1,53 @@
+.accordion {
+    margin: 2rem auto 2rem auto;
+    width: 50%;
+    text-align: center;
+    border-radius: 0.3rem;
+    overflow: hidden;
+
+    >h1 {
+        padding: 0.5rem;
+        font-size: 2rem;
+        font-weight: 600;
+        background-color: red;
+    }
+
+    >p {
+        font-size: 1.5rem;
+        height: 0;
+        overflow: hidden;
+        background-color: rgb(239, 94, 94);
+    }
+}
+
+.button-container {
+    width: 40%;
+    display: flex;
+    margin: 1rem auto 0 auto;
+    justify-content: space-around;
+
+    >.accordion-button {
+        background-color: white;
+        padding: 0.5rem;
+        border: solid rgb(224, 224, 224) 1px;
+        border-radius: 0.3rem;
+        transition: 400ms;
+
+        &:hover {
+            scale: 1.1;
+        }
+    }
+
+    >.optionSelected {
+        background-color: rgb(157, 240, 157);
+    }
+}
+
+.selected {
+    >p {
+        font-size: 1.5rem;
+        height: 100%;
+        padding: 1rem;
+        overflow: hidden;
+    }
+}

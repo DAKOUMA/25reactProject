@@ -1,0 +1,20 @@
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid black 2px;
+}
+
+.moreData-container {
+    display: flex;
+    flex-direction: column;
+    >button {
+        margin: auto;
+    }
+}

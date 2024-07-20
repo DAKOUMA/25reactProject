@@ -1,0 +1,28 @@
+.staringRate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem auto 3rem auto;
+    > h1 {
+        font-size: 3rem;
+        margin: 0 0 2rem 0;
+    }
+
+}
+
+.starContainer {
+    display: flex;
+}
+
+.stars {
+    transition: 1s;
+}
+
+.active {
+    color: #fff700;
+    transform: rotate(360deg);
+}
+
+.inactive {
+    color: #000000;
+}

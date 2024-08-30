@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  list-style: none;
+}
+
 .accordion {
   margin: 2rem auto 2rem auto;
   width: 50%;
@@ -174,11 +183,113 @@
   margin: auto;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  font-weight: 400;
-  text-decoration: none;
-  list-style: none;
+.item-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+ul > li {
+  margin-left: 2rem;
+}
+
+.qr-code-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.qr-code-placeholder {
+  width: 200px;
+  height: 200px;
+  border: solid black 1px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+#qr-code-value {
+  border: solid black 1px;
+}
+
+:root {
+  --background: #ffffff;
+  --text-primary: #000;
+  --button-bg: #000;
+  --button-text: #ffffff ;
+}
+
+[data-theme=dark] {
+  --background: #000;
+  --text-primary: #ffffff;
+  --button-bg: #ffffff;
+  --button-text: #000 ;
+}
+
+.darkMode-container {
+  transition: all 0.5s;
+  background-color: var(--background);
+  color: var(--text-primary);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.darkMode-hello-container {
+  display: flex;
+  flex-direction: column;
+}
+.darkMode-hello-container > h1 {
+  font-size: 2rem;
+}
+
+.darkMode-toggle-button {
+  transition: all 0.5s;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  margin-top: 1rem;
+  padding: 0.2rem;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+:root {
+  --scroll-position: 0 ;
+}
+
+.scroll-indicator-bar {
+  position: fixed;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 5rem;
+}
+.scroll-indicator-bar > h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+.scroll-indicator-bar > span {
+  height: 0.5rem;
+  background-color: red;
+}
+.scroll-indicator-bar > span::before {
+  content: "";
+  display: block;
+  background-color: black;
+  height: 0.5rem;
+  width: calc(var(--scroll-position) * 1%);
+}
+
+.scroll-indicator-item-container {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  background-color: red;
 }/*# sourceMappingURL=App.css.map */

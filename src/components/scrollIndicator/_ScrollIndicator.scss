@@ -1,0 +1,42 @@
+:root {
+    --scroll-position: 0
+}
+
+.scroll-indicator-container {
+
+}
+
+.scroll-indicator-bar {
+    position: fixed;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 5rem;
+    > h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    > span {
+        height: 0.5rem;
+        background-color: red;
+        &::before {
+            content: '';
+            display: block;
+            background-color: black;
+            height: 0.5rem;
+            width: calc(var(--scroll-position) * 1%);
+        }
+    }
+}
+
+.scroll-indicator-item-container {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    background-color: red;
+}

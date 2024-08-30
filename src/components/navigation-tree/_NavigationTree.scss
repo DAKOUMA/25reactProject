@@ -1,0 +1,11 @@
+.item-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+ul {
+    > li {
+        margin-left: 2rem;
+    }
+}

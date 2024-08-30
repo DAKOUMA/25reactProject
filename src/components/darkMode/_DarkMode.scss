@@ -1,0 +1,41 @@
+:root {
+    --background: #ffffff;
+    --text-primary: #000;
+    --button-bg: #000;
+    --button-text: #ffffff
+}
+
+[data-theme='dark'] {
+    --background: #000;
+    --text-primary: #ffffff;
+    --button-bg: #ffffff;
+    --button-text: #000
+}
+
+.darkMode-container {
+    transition: all 0.5s;
+    background-color: var(--background);
+    color: var(--text-primary);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.darkMode-hello-container {
+    display: flex;
+    flex-direction: column;
+    > h1 {
+        font-size: 2rem;
+    }
+}
+
+.darkMode-toggle-button {
+    transition: all 0.5s;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    margin-top: 1rem;
+    padding: 0.2rem;
+    border: none;
+    border-radius: 0.3rem;
+}
